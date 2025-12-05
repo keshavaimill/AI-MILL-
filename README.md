@@ -1,73 +1,151 @@
-# Welcome to your Lovable project
+# AI Mill - Accelerating Intelligence for Every Business
 
-## Project info
+AI Mill is a boutique AI consulting firm that transforms complex workflows into accessible, powerful tools for businesses. We specialize in delivering enterprise-grade AI solutions that drive measurable results and accelerate digital transformation.
 
-**URL**: https://lovable.dev/projects/dc7da25d-0b95-4120-8fa5-7aa677eddfa9
+## 🌟 About AI Mill
 
-## How can I edit this code?
+Our mission is to democratize advanced artificial intelligence by transforming complex workflows into accessible, powerful tools for individuals and teams. We empower creators, businesses, and innovators to build, automate, and scale AI-driven solutions with speed, clarity, and confidence.
 
-There are several ways of editing your application.
+## 🚀 Our Solutions
 
-**Use Lovable**
+### 1. Boutique AI Consulting
+Custom AI strategies and solutions tailored to your unique business challenges. We provide strategic planning, custom solutions, and expert guidance to help you navigate your AI transformation journey.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc7da25d-0b95-4120-8fa5-7aa677eddfa9) and start prompting.
+### 2. AI Marketing Platform
+Automated marketing campaigns powered by intelligent AI across all channels. Features include multi-channel automation, advanced analytics, and real-time optimization to maximize your marketing ROI.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3. AI Claims Assistant
+Streamline insurance claims processing with our intelligent automation system. Achieve 60-80% time reduction in claims processing while maintaining high accuracy and significant cost savings.
 
-**Use your preferred IDE**
+### 4. AI Legal & Tax Assistant
+Intelligent automation for legal research and tax compliance. Our platform provides powerful research tools, compliance monitoring, and advanced document analysis capabilities.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technology Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This website is built with modern web technologies:
 
-Follow these steps:
+- **Vite** - Next-generation frontend build tool
+- **React 18** - UI library for building interactive interfaces
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn-ui** - High-quality React component library
+- **Framer Motion** - Animation library for React
+- **React Router** - Client-side routing
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
 git clone <YOUR_GIT_URL>
+cd ai-mill-visions-main
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Set up environment variables (optional):
+```bash
+cp env.example .env
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+For the contact form to work, configure EmailJS credentials in your `.env` file:
+- `VITE_EMAILJS_SERVICE_ID`
+- `VITE_EMAILJS_TEMPLATE_ID`
+- `VITE_EMAILJS_PUBLIC_KEY`
+
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173` (or the port shown in your terminal).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The production-ready files will be in the `dist` directory.
 
-## What technologies are used for this project?
+### Preview Production Build
 
-This project is built with:
+```bash
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📁 Project Structure
 
-## How can I deploy this project?
+```
+├── src/
+│   ├── components/      # Reusable React components
+│   │   ├── ui/         # shadcn-ui components
+│   │   ├── Hero.tsx    # Hero section component
+│   │   ├── Navigation.tsx
+│   │   ├── Footer.tsx
+│   │   └── ...
+│   ├── pages/          # Page components
+│   │   ├── Index.tsx   # Home page
+│   │   ├── About.tsx   # About page
+│   │   ├── Contact.tsx # Contact page
+│   │   └── solutions/  # Solution pages
+│   ├── assets/         # Images and static assets
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions
+│   └── services/       # API and service integrations
+├── public/             # Public static files
+└── ...
+```
 
-Simply open [Lovable](https://lovable.dev/projects/dc7da25d-0b95-4120-8fa5-7aa677eddfa9) and click on Share -> Publish.
+## 🎨 Features
 
-## Can I connect a custom domain to my Lovable project?
+- **Responsive Design** - Fully responsive across all devices
+- **Modern UI/UX** - Beautiful, intuitive interface with smooth animations
+- **Performance Optimized** - Fast loading times and optimized bundle size
+- **SEO Friendly** - Proper meta tags and semantic HTML
+- **Accessible** - Built with accessibility best practices
+- **Contact Form** - Integrated EmailJS for contact form submissions
 
-Yes, you can!
+## 📝 Development
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Linting
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+npm run lint
+```
+
+### Code Style
+
+The project uses ESLint for code quality. Make sure to follow the existing code style and conventions.
+
+## 🚢 Deployment
+
+This project can be deployed to any static hosting service:
+
+- **Vercel** - Recommended for React applications
+- **Netlify** - Easy deployment with continuous integration
+- **GitHub Pages** - Free hosting for public repositories
+- **AWS S3 + CloudFront** - Enterprise-grade hosting
+
+For deployment, simply run `npm run build` and upload the `dist` directory to your hosting provider.
+
+## 📧 Contact
+
+For inquiries about our services or to discuss your AI transformation needs, please visit our [Contact Page](https://your-domain.com/contact) or reach out through the contact form on the website.
+
+## 📄 License
+
+This project is proprietary software. All rights reserved.
+
+---
+
+**AI Mill** - Transforming businesses through intelligent automation and AI innovation.
